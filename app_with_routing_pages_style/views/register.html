@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to our service centre</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a class="active" href="/">Home</a></li>
+                <li class="main-header__item"><a href="/user/login">Login</a></li>
+                <li class="main-header__item"><a href="/user/register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Service Centres</h1>
+        <p>Welcome to register page</p>
+        <form class="register-form" action="/user/register" method="POST">
+            <input type="text" placeholder="name" name="username" id="username"/>
+            <input type="password" placeholder="password" name="password" id="password"/>
+            <input type="text" placeholder="email address" name="email" id="email"/>
+            <button type="submit">create</button>
+            <p class="message">Already registered? <a href="/user/login">Sign In</a></p>
+          </form>
+    </main>
+</body>
+</html>
