@@ -1,0 +1,14 @@
+<%-include('includes/head.ejs')%>
+<%-include('includes/navigation.ejs')%>
+<main>
+    <h1>Service Centres</h1>
+    <p>Welcome to login page</p>
+
+    <form class="login-form" action="/user/login" method="POST">
+        <input type="text" placeholder="username" name="username" id="username"/>
+        <input type="password" placeholder="password" name="password" id="password"/>
+        <button type="submit">login</button>
+        <p class="message">Not registered? <a href="/user/register">Create an account</a></p>
+    </form>
+</main>
+<%-include('includes/end.ejs')%>

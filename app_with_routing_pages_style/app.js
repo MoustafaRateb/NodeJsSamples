@@ -5,6 +5,7 @@ const homeRouter = require('./routes/home');
 const userRouter = require('./routes/users');
 
 const app = express();
+
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname,'public')));
 app.use(homeRouter);
